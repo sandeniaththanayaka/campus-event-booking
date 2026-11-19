@@ -1,0 +1,76 @@
+/* ===== Colours (එක තැනකින් වෙනස් කරන්න පුළුවන්) ===== */
+:root {
+    --primary: #1e3a8a;
+    --accent: #f59e0b;
+    --success: #16a34a;
+    --danger: #dc2626;
+    --bg: #f8fafc;
+    --text: #1f2937;
+}
+
+/* ===== සාමාන්‍ය ===== */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* ===== Navbar ===== */
+.site-navbar {
+    background-color: var(--primary);
+}
+
+.site-navbar .navbar-brand {
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.site-navbar .navbar-brand i {
+    color: var(--accent);
+}
+
+.site-navbar .nav-link {
+    color: #e5e7eb;
+    font-weight: 500;
+}
+
+.site-navbar .nav-link:hover {
+    color: var(--accent);
+}
+
+/* ===== Buttons ===== */
+.btn-accent {
+    background-color: var(--accent);
+    color: #1f2937;
+    font-weight: 600;
+    border: none;
+}
+
+.btn-accent:hover {
+    background-color: #d97706;
+    color: #ffffff;
+}
+
+.btn-primary-custom {
+    background-color: var(--primary);
+    color: #ffffff;
+    border: none;
+}
+
+.btn-primary-custom:hover {
+    background-color: #172554;
+    color: #ffffff;
+}
+
+/* ===== Footer ===== */
+.site-footer {
+    background-color: var(--primary);
+    color: #e5e7eb;
+}
