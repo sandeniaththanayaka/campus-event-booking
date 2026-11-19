@@ -1,6 +1,7 @@
 /* ===== Colours (එක තැනකින් වෙනස් කරන්න පුළුවන්) ===== */
 :root {
     --primary: #1e3a8a;
+    --primary-dark: #172554;
     --accent: #f59e0b;
     --success: #16a34a;
     --danger: #dc2626;
@@ -13,13 +14,11 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--bg);
     color: var(--text);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
+/* footer එක පහළට තල්ලු කරන්න */
 main {
-    flex: 1;
+    min-height: 70vh;
 }
 
 /* ===== Navbar ===== */
@@ -65,8 +64,44 @@ main {
 }
 
 .btn-primary-custom:hover {
-    background-color: #172554;
+    background-color: var(--primary-dark);
     color: #ffffff;
+}
+
+/* ===== Hero section (Homepage) ===== */
+.hero {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: #ffffff;
+    padding: 80px 0;
+}
+
+.hero h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.hero p.lead {
+    color: #dbeafe;
+}
+
+.hero .highlight {
+    color: var(--accent);
+}
+
+/* ===== Feature cards ===== */
+.feature-card {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    padding: 30px 20px;
+    height: 100%;
+    text-align: center;
+}
+
+.feature-card .feature-icon {
+    font-size: 2.5rem;
+    color: var(--accent);
 }
 
 /* ===== Footer ===== */
