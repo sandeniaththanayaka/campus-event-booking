@@ -16,10 +16,6 @@ body {
     color: var(--text);
 }
 
-/* footer එක පහළට තල්ලු කරන්න */
-main {
-    min-height: 70vh;
-}
 
 /* ===== Navbar ===== */
 .site-navbar {
