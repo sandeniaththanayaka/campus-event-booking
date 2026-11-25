@@ -12,7 +12,12 @@ include '../includes/header.php';
 ?>
 
 <div class="container py-4">
-    <h2 class="fw-bold">Welcome, <?php echo htmlspecialchars($_SESSION['full_name']); ?>!</h2>
+    <?php if (isset($_SESSION['success'])) { ?>
+    <div class="alert alert-success">
+        <?php echo htmlspecialchars($_SESSION['success']); unset($_SESSION['success']); ?>
+    </div>
+<?php } ?>
+<h2 class="fw-bold">Welcome, <?php echo htmlspecialchars($_SESSION['full_name']); ?>!</h2>
     <p class="text-muted">This is your student dashboard. More features coming soon.</p>
 </div>
 
